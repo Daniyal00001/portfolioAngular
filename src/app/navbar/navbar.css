@@ -50,3 +50,8 @@
     font-size: 1.1rem;
   }
 }
+/* Target Bootstrap hamburger lines (svg) and make them green */
+/* Custom green burger icon (#00ffae) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ffae' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300ffae' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

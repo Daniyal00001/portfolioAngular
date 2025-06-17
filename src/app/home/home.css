@@ -150,4 +150,8 @@
   .code-card {
     max-width: 320px;
   }
+  .code-card span {
+  font-size: 12px;
 }
+}
+
