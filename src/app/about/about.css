@@ -94,6 +94,7 @@ align-items: center;
     width: 100%;
     max-width: 250px;
     margin-top: 1rem;
+  
   }
 
   .snake-border {
@@ -120,5 +121,13 @@ align-items: center;
   .hh{
     display: none;
     
+  }
+}
+
+
+
+@media (max-width: 388) {
+  .daniyal-img{
+    margin-bottom: 30px;
   }
 }

@@ -136,3 +136,10 @@
     overflow-x: auto;
   }
 }
+
+@media screen and (max-width: 392px){
+   .code-card {
+  
+    max-width: 320px;
+   }
+}
