@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: row;
   min-height: 100vh;
-  padding-top: 4rem; /* make space for navbar */
+  padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
@@ -14,93 +14,13 @@
     align-items: flex-start;
     justify-content: flex-start;
     min-height: auto;
-    padding-top: 6rem; /* extra space for navbar */
-    padding-bottom: 2rem;
-  }
-  .daniyal-img{
-    margin-bottom: 30px;
-  }
-}
-
-.fontt{
-  font-weight: 400;
-  font-size: large;
-}
-.rotate-text {
-  transform: rotate(90deg);
-  right: -40px;
-}
-
-.badge.bg-primary {
-  background-color: #2a6d59 !important;
-  color: #0b0c2a;
-  box-shadow: 0 0 10px rgba(0, 255, 174, 0.2);
-  color: white;
-}
-
-.snake-border {
-  position: relative;
-  display: inline-block;
-  padding: 5px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.snake-border::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  border: 2px solid transparent;
-  background: linear-gradient(
-    to right,
-    #00ffae 0%,
-    #00ffae 25%,
-    transparent 25%,
-    transparent 100%
-  );
-  background-size: 400% 400%;
-  background-repeat: no-repeat;
-  animation: snakeMove 3s linear infinite;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.daniyal-img {
-  border-radius: 15px;
-  display: block;
-  width: 300px;
-  height: auto;
-  position: relative;
-  z-index: 1;
-}
-@keyframes snakeMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 400% 400%;
-  }
-}
-
-
-
-
-@media (max-width: 767.98px) {
-  .heightt {
-    flex-direction: column;
-    min-height: 85vh;
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
   }
 
   .rotate-text {
-    transform: rotate(0deg); /* Reset rotation */
+    transform: rotate(0deg);
     position: static;
-    display: inline-block;
     margin-top: 1rem;
   }
 
@@ -108,7 +28,7 @@
     width: 100%;
     max-width: 250px;
     margin-top: 1rem;
-  
+    margin-bottom: 1.5rem;
   }
 
   .snake-border {
@@ -128,20 +48,73 @@
     font-size: 0.85rem;
     padding: 6px 12px;
   }
-  .hell{
-    margin-top: 70px;
-    
-  }
-  .hh{
+
+  .hh {
     display: none;
-    
   }
 }
 
-
-
-@media (max-width: 388) {
-  .daniyal-img{
+@media (max-width: 388px) {
+  .daniyal-img {
     margin-bottom: 30px;
+  }
+}
+
+.fontt {
+  font-weight: 400;
+  font-size: large;
+}
+
+.rotate-text {
+  transform: rotate(90deg);
+  right: -40px;
+}
+
+.badge.bg-primary {
+  background-color: #2a6d59 !important;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.2);
+}
+
+.snake-border {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.snake-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #00ffae 0%, #00ffae 25%, transparent 25%, transparent 100%);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  animation: snakeMove 3s linear infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.daniyal-img {
+  border-radius: 15px;
+  display: block;
+  width: 300px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes snakeMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 400% 400%;
   }
 }
