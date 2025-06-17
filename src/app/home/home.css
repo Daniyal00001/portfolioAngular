@@ -1,43 +1,57 @@
 :host {
-  display: flex; /* required for layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex: 1;
-  overflow: hidden;
+  overflow-y: auto;
   background-color: black;
   color: white;
+  width: 100%;
 }
 
-.left-section {
-  margin-left: 35px;
-  flex: 1;
-}
-
+/* Left and Right Sections */
+.left-section,
 .right-section {
-  margin-right: 30px;
-  flex: 1;
+  flex: 1 1 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Desktop layout adjustments */
+@media screen and (min-width: 880px) {
+  .left-section {
+    margin-left: 35px;
+    flex: 1;
+  }
+
+  .right-section {
+    margin-right: 30px;
+    flex: 1;
+  }
+}
+
+/* Code Card Styling */
 .code-card {
+  background: linear-gradient(135deg, #1d1f3b, #2b2d55);
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
   font-size: larger;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
-
-/* -------------------------------------------- */
-
+/* Homepage Headings */
 .homepage h1,
 .homepage h2 {
   text-shadow: 0 0 6px rgba(0, 255, 174, 0.5);
 }
 
-.code-card {
-  background: linear-gradient(135deg, #1d1f3b, #2b2d55);
-  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
-}
-
-/* ====== Social Icons ====== */
+/* Social Icons */
 .social-icons a {
   color: #ff4ec5;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -48,7 +62,7 @@
   color: #bd3690;
 }
 
-/* ====== Buttons ====== */
+/* Buttons */
 .btn-outline-light {
   border-color: #00ffae;
   color: #00ffae;
@@ -59,11 +73,13 @@
   color: #0b0c2a;
 }
 
-.fa-user{
+.fa-user {
   margin-left: 10px;
 }
+
+/* Text Colors */
 .text-yellow {
-  color: #FFD700; /* gold/yellow */
+  color: #FFD700;
 }
 
 .text-orange {
@@ -74,72 +90,64 @@
   color: #ff69b4;
 }
 
-.line{
+/* Line and Circles */
+.line {
   display: flex;
   flex-direction: column;
 }
-.greenishline{
- border-bottom: 0.1px solid #00ffae;
+
+.greenishline {
+  border-bottom: 0.1px solid #00ffae;
   box-shadow: 0 9px 10px 1px rgba(0, 255, 174, 0.4);
   width: 100%;
+  display: flex;
+  gap: 8px;
 }
+
 .div {
   width: 10px;
   height: 10px;
-  border-radius: 50%; /* makes it a circle */
+  border-radius: 50%;
 }
 
-/* Specific colors for each circle */
 .a {
-  background-color: #00ffae; /* greenish */
+  background-color: #00ffae;
   margin-bottom: 10px;
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .b {
-  background-color: #ff69b4; /* pink */
+  background-color: #ff69b4;
 }
 
 .c {
-  background-color: #FFD700; /* yellow */
-}
-.greenishline{
-  display: flex;
-  gap: 8px;
-
-  
+  background-color: #FFD700;
 }
 
-
+/* Tablet and Below */
 @media screen and (max-width: 880px) {
-  .adjust{
+  .adjust {
     margin-top: 88px;
   }
-  
 }
-@media screen and (max-width: 569px){
-  .right-section {
-    /* background-color: red; */
+
+/* Mobile Screens */
+@media screen and (max-width: 569px) {
+  .right-section,
+  .left-section {
     width: 100%;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
+    padding: 15px;
   }
 
   .code-card {
-    /* background-color: orange !important; */
-    width: 100%;
     max-width: 350px;
     font-size: 14px;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow-x: auto;
   }
 }
 
-@media screen and (max-width: 392px){
-   .code-card {
-  
+/* Extra Small Screens */
+@media screen and (max-width: 392px) {
+  .code-card {
     max-width: 320px;
-   }
+  }
 }
