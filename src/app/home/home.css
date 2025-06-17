@@ -148,10 +148,30 @@
 /* Extra Small Screens */
 @media screen and (max-width: 392px) {
   .code-card {
-    max-width: 320px;
+    max-width: 300px;
   }
   .code-card span {
   font-size: 12px;
 }
 }
 
+@media screen and (max-width: 392px) {
+  .code-card {
+    max-width: 280px;
+    font-size: 11px;
+    padding: 10px;
+    overflow-x: auto; /* Allow scrolling if still overflows */
+    white-space: pre-wrap; /* Prevent horizontal scrolling when possible */
+    word-break: break-word; /* Break long words */
+  }
+
+  .code-card span {
+    font-size: 11px;
+  }
+
+  .code-card code {
+    display: block;
+    line-height: 1.3;
+    white-space: pre-wrap; /* Wrap preformatted text */
+  }
+}

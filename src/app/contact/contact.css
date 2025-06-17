@@ -76,3 +76,18 @@ form .form-control::placeholder {
 }
 }
 
+@media screen and (max-width: 768px) {
+.uu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.kk{
+  margin-right: 70px;
+}
+.kl{
+  margin-right: 64px;
+}
+}
