@@ -1,13 +1,27 @@
-.heightt{
-height: 35rem;
-display: flex;
-align-items: center;
-/* new */
- min-height: 100vh;  
-  padding-top: 3rem;
+.heightt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+  padding-top: 4rem; /* make space for navbar */
   padding-bottom: 3rem;
-
 }
+
+@media (max-width: 767.98px) {
+  .heightt {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: auto;
+    padding-top: 6rem; /* extra space for navbar */
+    padding-bottom: 2rem;
+  }
+  .daniyal-img{
+    margin-bottom: 30px;
+  }
+}
+
 .fontt{
   font-weight: 400;
   font-size: large;
