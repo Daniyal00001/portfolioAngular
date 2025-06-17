@@ -1,0 +1,138 @@
+:host {
+  display: flex; /* required for layout */
+  flex: 1;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.left-section {
+  margin-left: 35px;
+  flex: 1;
+}
+
+.right-section {
+  margin-right: 30px;
+  flex: 1;
+}
+
+.code-card {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+}
+
+
+/* -------------------------------------------- */
+
+.homepage h1,
+.homepage h2 {
+  text-shadow: 0 0 6px rgba(0, 255, 174, 0.5);
+}
+
+.code-card {
+  background: linear-gradient(135deg, #1d1f3b, #2b2d55);
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
+}
+
+/* ====== Social Icons ====== */
+.social-icons a {
+  color: #ff4ec5;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #bd3690;
+}
+
+/* ====== Buttons ====== */
+.btn-outline-light {
+  border-color: #00ffae;
+  color: #00ffae;
+}
+
+.btn-outline-light:hover {
+  background-color: #00ffae;
+  color: #0b0c2a;
+}
+
+.fa-user{
+  margin-left: 10px;
+}
+.text-yellow {
+  color: #FFD700; /* gold/yellow */
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-pink {
+  color: #ff69b4;
+}
+
+.line{
+  display: flex;
+  flex-direction: column;
+}
+.greenishline{
+ border-bottom: 0.1px solid #00ffae;
+  box-shadow: 0 9px 10px 1px rgba(0, 255, 174, 0.4);
+  width: 100%;
+}
+.div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* makes it a circle */
+}
+
+/* Specific colors for each circle */
+.a {
+  background-color: #00ffae; /* greenish */
+  margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.b {
+  background-color: #ff69b4; /* pink */
+}
+
+.c {
+  background-color: #FFD700; /* yellow */
+}
+.greenishline{
+  display: flex;
+  gap: 8px;
+
+  
+}
+
+
+@media screen and (max-width: 880px) {
+  .adjust{
+    margin-top: 88px;
+  }
+  
+}
+@media screen and (max-width: 569px){
+  .right-section {
+    /* background-color: red; */
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .code-card {
+    /* background-color: orange !important; */
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+}

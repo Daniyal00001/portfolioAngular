@@ -1,0 +1,46 @@
+.gg{
+    background-color: rgb(141, 88, 88);
+}
+.kk{
+    background-color: blue;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+.eduImg img{
+    height: 360px;
+}
+
+body {
+    background-image: url('/assets/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
+.hy{
+      box-shadow: 0 0 10px #00ffae, 0 0 20px #ff00ff;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    width: 400px;
+}
+
+@media screen and (max-width: 522px) {
+.card{
+    width: 330px;
+    margin-right: 0px;
+    margin-bottom: 35px;
+}
+
+}

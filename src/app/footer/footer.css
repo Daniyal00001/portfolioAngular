@@ -1,0 +1,19 @@
+.footer-custom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* subtle border */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05); /* top shadow */
+  background-color: transparent; /* optional, to blend with page */
+  text-align: left;
+}
+
+.footer-text {
+  color: #6c757d; /* Bootstrap's text-muted color */
+  font-size: 0.95rem;
+}
+
+.a{
+  color:white;
+  margin-right: 5px;
+}
+.b{
+  color:#FF69B4;
+}

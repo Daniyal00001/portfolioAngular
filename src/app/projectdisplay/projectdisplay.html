@@ -1,0 +1,25 @@
+<div class="container  text-white rounded p-4 position-relative hy">
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-12 mb-3 mb-md-0 text-center">
+      <img [src]="project.img" [alt]="project.alt" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h3 class="mb-2">{{ project.title }}</h3>
+    <p class="mb-3">{{ project.desc }}</p>
+
+    <div class="mb-3">
+      <span class="badge bg-primary me-1">{{ project.tech1 }}</span>
+      <span class="badge bg-success me-1">{{ project.tech2 }}</span>
+      <span class="badge bg-info text-dark">{{ project.tech3 }}</span>
+    </div>
+
+    <a [href]="project.github_link" target="_blank" class="btn btn-outline-light">
+      <i class="fab fa-github me-1"></i> Github
+    </a>
+  </div>
+
+  <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" aria-label="Close"
+    (click)="emitClose()"></button>
+</div>

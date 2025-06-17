@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* not fixed 100vh */
+  margin: 0;
+}
+
+.hero-wrapper {
+  height: 100vh; /* only hero fills screen */
+  display: flex;
+  flex-direction: column;
+}
+
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #00ffae, #ff00ff);
+  box-shadow: 0 0 10px #00ffae, 0 0 20px #ff00ff;
+  margin: 60px 0; /* spacing between sections */
+}

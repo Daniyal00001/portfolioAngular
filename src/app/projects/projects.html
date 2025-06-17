@@ -1,0 +1,24 @@
+<div class="container-fluid py-5 flexx text-center" id="projects">
+  <h2 class="text-center fw-bold mb-5 position-relative project-title">Projects</h2>
+
+  <div class="row g-4 justify-content-center">
+    <div 
+      class="col-sm-6 col-md-4"
+      *ngFor="let project of projects"
+      (click)="yes(project)"  
+    >
+    <!-- FUNCTION CALL , WITH PARAMETER PROJECT(above)  -->
+      <div class="project-card text-center p-3 rounded">
+        <img [src]="project.img" class="img-fluid mb-3" [alt]="project.alt" />
+        <h5 class="project-title">{{ project.title }}</h5>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- here this is child component -->
+   <!-- ngIf MEANS conditional rendering, if yes function => sets showProjects to true, then it will show the child component -->
+    <!-- no() is a function made in parent , and want to call it in child component, so we use (closed) event binding   ,   @output => , it asks parent to trigger a function -->
+     <!-- here project is specific component details , that are pass as a input to child component -->
+  <app-projectdisplay *ngIf="showProjects"   [project]="selectedProject"  (closed)="no()" ></app-projectdisplay>
+</div>

@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #0b0c2a;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #00ffae;
+}
+
+a:hover {
+  color: #39ffba;
+  text-decoration: none;
+}
+
+.text-pink {
+  color: #ff4ec5;
+}
+
+.text-green {
+  color: #00ffae;
+}
+
+.bg-dark {
+  background-color: #12142c !important;
+}
+
+.bg-black {
+  background-color: #0b0c2a !important;
+}
+
+
+
+
+/* ====== Section Titles ====== */
+h2 {
+  font-weight: 700;
+  color: #00ffae;
+  /* text-shadow: 0 0 10px #00ffae; */
+}
+
+/* ====== Cards (Education, Experience, etc.) ====== */
+.card {
+  background: linear-gradient(to right, #1d1f3b, #2b2d55);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 174, 0.5);
+}
+
+/* ====== About Me Image & Badge ====== */
+
+
+/* ====== Footer / Contact Section (Optional Additions) ====== */
+.footer,
+.contact {
+  background-color: #0e102a;
+  color: #ffffff;
+  border-top: 1px solid rgba(0, 255, 174, 0.2);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #1d1f3b;
+  color: white;
+  border-color: #00ffae;
+  box-shadow: 0 0 5px rgba(0, 255, 174, 0.2);
+}
+
+
+
+
+.project-title {
+  display: inline-block;
+  border-bottom: 3px solid #6f42c1; /* Purple underline */
+  padding-bottom: 5px;
+}
+
+.byy {
+  box-shadow: 0 10px 15px -5px #00ffae, 0 15px 20px -10px #ff00ff;
+}

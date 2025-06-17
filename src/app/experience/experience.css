@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 45px; */
+    width: 450px;
+    margin-bottom: 25px;
+}
+
+.by{
+      box-shadow: 0 0 10px #00ffae, 0 0 20px #ff00ff;
+}
+
+.card-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width: 522px) {
+.card{
+    width: 330px;
+        /* margin-left: 32px; */
+}
+}
+
+.heighttt{
+    min-height: 400px !important;
+    margin-bottom: -35px;
+}
